@@ -21,5 +21,7 @@ from app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.htl'), name='index'),
-    path('')
+    path('atendimento/', AtendimentoView.as_view(), name='Atendimento'),
+    path('galeriadeplanta/',GaleriaDePlanta.as_view(), name='GaleriadePlantas'),
+    path('usuario/',Usuario.as_view(), name='Usuario'),
 ]
